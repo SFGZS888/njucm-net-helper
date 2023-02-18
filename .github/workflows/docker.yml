@@ -28,11 +28,11 @@ jobs:
           context: .
           push: true
           platforms: linux/amd64,linux/arm64,linux/arm
-          tags: dysf888/test:latest
+          tags: dysf888/njucm-net-helper:latest
     - name: Docker Hub Description
       uses: peter-evans/dockerhub-description@v3
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
-        repository: wmdscjhdpy/autologin
+        repository: SFGZS888/njucm-net-helper
         readme-filepath: ./readme.md
