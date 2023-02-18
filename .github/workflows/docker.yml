@@ -43,4 +43,4 @@ jobs:
         with:
           context: .
           platforms: linux/amd64,linux/arm/v7
-          tags: njucm-net-helper:latest
+          tags: SFGZS888/njucm-net-helper:latest
