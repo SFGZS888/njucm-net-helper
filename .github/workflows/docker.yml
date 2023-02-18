@@ -35,4 +35,4 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
         repository: SFGZS888/njucm-net-helper
-        readme-filepath: ./readme.md
+        readme-filepath: ./README.md
