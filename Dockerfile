@@ -11,7 +11,7 @@ RUN echo "*/1 * * * * /usr/bin/curl 'http://10.2.131.242/api/portal/v1/login' \
         -H 'Referer: http://10.2.131.242/portal/index.html' \
         -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36' \
         -H 'X-Requested-With: XMLHttpRequest' \
-        --data-raw '{\"domain\":\"service\",\"username\":\"user\",\"password\":\"pwd\"}' \
+        --data-raw '{\"domain\":\"service\",\"username\":\"usrn\",\"password\":\"pwd\"}' \
         --compressed --insecure" >> /etc/crontabs/root
 ENV TZ=Asia/Shanghai
 COPY start.sh /
