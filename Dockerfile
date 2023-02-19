@@ -2,7 +2,7 @@ FROM alpine
 RUN apk add --no-cache curl tzdata
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone
-RUN echo "*/1 * * * * /usr/bin/curl 'http://10.2.131.242/api/portal/v1/login' \
+RUN echo "0 7 * * * /usr/bin/curl 'http://10.2.131.242/api/portal/v1/login' \
         -H 'Accept: application/json, text/javascript, */*; q=0.01' \
         -H 'Accept-Language: zh-CN,zh;q=0.9' \
         -H 'Connection: keep-alive' \
